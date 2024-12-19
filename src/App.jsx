@@ -1,13 +1,13 @@
 import { useState } from "react";
 import Header from "./components/Header.jsx";
 import KhodamForm from "./components/KhodamForm.jsx";
-import KhodamResult from './components/Khodamresult.jsx';
+import KhodamResult from './components/KhodamResult.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const [result, setResult] = useState("");
 
   const checkKhodam = (name) => {
-    // Simulasi hasil cek khodam
     const possibleResults = [
       'Ular berbiji dua',
       'Macan kumbang',
@@ -18,31 +18,38 @@ const App = () => {
       'Serigala abu-abu',
       'Kuda emas',
       'Singa merah',
-      'pagar besi',
-      'perpus smekda',
-      'beat karbu',
-      'javascript',
-      'jet darat',
-      'ubur ubur sigma',
-      'kalajengking berhati dua',
-      'badak ngawi',
-      'laba laba jawa',
-      'hantu handphone',
-      'printer rusak',
-      'kulkas dua pintu',
-      'aqua gelas',
-      'roger sumatra',
+      'Pagar besi',
+      'Perpus Smekda',
+      'Beat karbu',
+      'Javascript',
+      'Jet darat',
+      'bunda.html',
+      'bunda.jsx',
+      'laba laba ngawi',
+      'cicak khayang',
+      'cairan ngawi',
+      'anti wibu',
+      'Ubur-ubur sigma',
+      'Kalajengking berhati dua',
+      'Badak Ngawi',
+      'Laba-laba Jawa',
+      'Hantu handphone',
+      'Printer rusak',
+      'Kulkas dua pintu',
+      'Aqua gelas',
+      'Roger Sumatra',
     ];
     const randomResult = possibleResults[Math.floor(Math.random() * possibleResults.length)];
-    setResult(`${name}, ${randomResult}`);
+    setResult(`${randomResult}`);
   };
 
   return (
     <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="container mx-auto p-4">
-        <KhodamForm onCheck={checkKhodam} />
-        <KhodamResult result={result} />
+        <h1 className="text-2xl font-bold text-center mb-4">Cek Khodam Anda</h1>
+        <KhodamForm onCheck={checkKhodam} result={result} />
+        {/* <KhodamResult result={result} /> */}
       </main>
     </div>
   );
