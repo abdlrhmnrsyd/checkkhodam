@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Header from "./components/Header";
-import KhodamForm from "./components/KhodamForm";
-import KhodamResult from './components/KhodamResult';
+import Header from "./components/Header.jsx";
+import KhodamForm from "./components/KhodamForm.jsx";
+import KhodamResult from './components/Khodamresult.jsx';
 
 const App = () => {
   const [result, setResult] = useState("");
