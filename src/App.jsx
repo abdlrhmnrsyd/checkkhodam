@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import KhodamForm from "./components/KhodamForm";
-import KhodamResult from "./components/KhodamResult";
+import KhodamResult from './components/KhodamResult';
 
 const App = () => {
   const [result, setResult] = useState("");
@@ -31,6 +31,7 @@ const App = () => {
       'printer rusak',
       'kulkas dua pintu',
       'aqua gelas',
+      'roger sumatra',
     ];
     const randomResult = possibleResults[Math.floor(Math.random() * possibleResults.length)];
     setResult(`${name}, ${randomResult}`);
