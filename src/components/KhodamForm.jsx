@@ -10,7 +10,7 @@ const KhodamForm = ({ onCheck }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gradient-to-r from-blue-500 to-blue-700 p-8 rounded-lg shadow-lg">
+    <form onSubmit={handleSubmit} className="bg-gradient-to-r from-blue-500 to-blue-700 p-8 rounded-lg shadow-lg max-w-md mx-auto">
       <label htmlFor="name" className="block mb-3 text-lg font-semibold text-white">
         Masukkan Nama Anda
       </label>
