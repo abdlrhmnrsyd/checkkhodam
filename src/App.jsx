@@ -37,6 +37,17 @@ const App = () => {
       'Kulkas dua pintu',
       'Aqua gelas',
       'Roger Sumatra',
+      'Ikan Patin',
+      'Kunti Bogel',
+      'Ayam Geprek',
+      'Harimau Pink',
+      'Janda Bolong',
+      'Anak Ayam',
+      'Kasur Rusak',
+      'Anak Anjing',
+      'Mimi Peri',
+      'Keong Racun',
+      
     ];
     const randomResult = possibleResults[Math.floor(Math.random() * possibleResults.length)];
     setResult(`${randomResult}`);
