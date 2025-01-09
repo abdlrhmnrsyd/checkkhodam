@@ -57,7 +57,7 @@ const App = () => {
     <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold text-center mb-4">Cek Khodam Anda</h1>
+        <h1 className="text-2xl font-bold text-center mb-4">Cek Khodam By XII RPL 1</h1>
         <KhodamForm onCheck={checkKhodam} result={result} />
       </main>
     </div>
